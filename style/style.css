@@ -1,0 +1,107 @@
+/*====FONTS & ICONS==== */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sigmar&family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap');
+/*====CSS RESET==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*================= */
+/*=====ROOT======= */
+:root {
+  --c-background: #000511;
+  --c-cardbackground: #172d44;
+  --c-titletext: #5ca8ff;
+  --c-normaltext: #FFFFFF;
+  }
+/*================= */
+/*====BODY==========*/
+body {
+  background-image: url(/assets/digital-data-wave.webp);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+/*==================*/
+/*====BACKGROUND======*/
+.background {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--c-cardbackground);
+  align-items: center;
+  width: auto;
+  height: auto;
+  border-radius: 20px;
+  margin: auto;
+  padding: 30px;
+  border: 1px solid var(--c-titletext);
+}
+/*==================*/
+/*====NAME & PROPIC==========*/
+img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  border: 1px solid black;
+}
+
+.propic {
+   display: flex;
+   justify-content: center;
+}
+
+.name {
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 500;
+  color: var(--c-titletext);
+  margin-top: 10px;
+  text-align: center;
+}
+
+.from {
+  font-size: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 300;
+  color: var(--c-titletext);
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.description {
+  font-size: 13px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+/*==================*/
+/*====LINKTREE======*/
+.linktree {
+  gap: 13px;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  border-radius: 20px;
+  height: 40px;
+  width: 200px;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border: 2px solid var(--c-titletext);
+}
+
+a {
+  text-decoration: none;
+  color: var(--c-normaltext);
+}
+
+button:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 5px var(--c-titletext);
+}
+/*==================*/
